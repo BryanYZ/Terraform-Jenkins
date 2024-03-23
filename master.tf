@@ -2,7 +2,7 @@ provider "aws" {
     region = "us-east-2"  
 }
 
-resource "aws_instance" "foo" {
+resource "aws_instance" "foo1" {
   ami           = "ami-0b8b44ec9a8f90422" # us-east-2, 1vCPU 1GB RAM
   instance_type = "t2.micro"
   tags = {
@@ -10,7 +10,7 @@ resource "aws_instance" "foo" {
   }
 }
 
-resource "aws_instance" "foo" {
+resource "aws_instance" "foo2" {
   ami           = "ami-0b8b44ec9a8f90422" # us-east-2, 1vCPU 1GB RAM
   instance_type = "t2.micro"
   tags = {
